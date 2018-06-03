@@ -1,168 +1,927 @@
-<!--[if IE 8 ]><html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!-->
 <!DOCTYPE html>
-<html lang="en-US">
-    <!--<![endif]-->
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>What A Home</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="all">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+    <!-- Slick -->
+    <link href="./css/slick.css" rel="stylesheet" media="all">
+    <!-- Bootstrap bootstrap-touch-slider Slider Main Style Sheet -->
+    <link href="./css/bootstrap-touch-slider.css" rel="stylesheet" media="all">
+    <!-- Sticky Header -->
+    <link rel='stylesheet' href='./css/sticky-header-style.css' type='text/css' media='all' />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- Slick JS -->
+    <script type='text/javascript' src='./js/slick.js'></script>
+    <!-- Bootstrap bootstrap-touch-slider Slider Main JS File -->
+    <script src="./js/bootstrap-touch-slider-min.js"></script>
+    <!-- Sticky Header js -->
+    <script type='text/javascript' src='./js/sticky-header-scripts.js'></script>
+    <!-- bootstrap js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="./js/bootstrap-touch-slider-min.js"></script>
+    <script type="text/javascript" src="./js/countUp.js"></script>
+    <!-- Custom JS -->
+    <script type='text/javascript' src='./js/custom.js'></script>
+    <link href="./css/custom.css" rel="stylesheet" media="all">
+</head>
+<body>
 
-    <head>
-        <meta charset="utf-8">
-        <title>
-            What-A-Home
-        </title><!-- Behavioral Meta Data -->
-      
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116512298-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<div id="top-bar">
+    <div class="box">
+        <div id="logo">
+            <!-- <h1>LOGO</h1> -->
+            <img src='./images/logo.png'>
+        </div>
+        <!--<div id="navigation" class="navigation">-->
+            <!--<nav id="nav">-->
+                <!--<ul>-->
+                    <!--<li><a href="#">OPTION-1</a></li>-->
+                    <!--<li><a href="#">OPTION-2</a></li>-->
+                    <!--<li><a href="#">OPTION-3</a></li>-->
+                    <!--<li><a href="#">OPTION-4</a></li>-->
+                    <!--<li><a href="#">OPTION-5</a></li>-->
+                    <!--<li><a href="#">OPTION-6</a></li>-->
+                    <!--<li><a href="#">OPTION-7</a></li>-->
+                    <!--<li><a href="#">OPTION-8</a></li>-->
+                <!--</ul>-->
+            <!--</nav>-->
+        <!--</div>-->
+        <!--<div id="button-box" class="button-box">-->
+            <!--<button type="button" id="toggle-nav" class="toggle-nav">MENU<span>&#9776;</span></button>-->
+        <!--</div>-->
+    </div>
+</div>
 
-  gtag('config', 'UA-116512298-1');
-</script>
+<main id="main">
+    <div id="overlay"></div>
+    <div class="box">
+        <div id="bootstrap-touch-slider" class="carousel bs-slider fade  control-round indicators-line" data-ride="carousel" data-interval="3500" > <!-- data-pause="hover" -->
 
-      <link rel="icon" type="image/png" href="32.png" />
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#bootstrap-touch-slider" data-slide-to="0" class="active"></li>
+                <li data-target="#bootstrap-touch-slider" data-slide-to="1"></li>
+                <li data-target="#bootstrap-touch-slider" data-slide-to="2"></li>
+                <li data-target="#bootstrap-touch-slider" data-slide-to="3"></li>
+                <li data-target="#bootstrap-touch-slider" data-slide-to="4"></li>
+            </ol>
 
-        <!--[if lt IE 9]>
-            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
-        
-        <!-- CSS -->
-        <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,900' rel='stylesheet' type='text/css'><!-- Styles -->
-        <link href="css/loader.css" rel="stylesheet" type="text/css">
-        <link href="css/normalize.css" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="css/font-awesome.min.css">
-        <link href="css/style.css" rel="stylesheet" type="text/css">
-        <!--[if lt IE 9]>
-            <link rel="stylesheet" type="text/css" href="css/ie.css" />
-        <![endif]-->
-        <!-- Javascript -->
-        <script src="js/jquery.js"></script>
-    </head>
-    <body>
-        <div class="preloader">
-            <div class="loading">
-                <h2>
-                    Loading...
-                </h2>
-                <span class="progress"></span>
+            <!-- Wrapper For Slides -->
+            <div class="carousel-inner" role="listbox">
+
+                <!-- first Slide -->
+                <div class="active item">
+                    <!-- Slide Background -->
+                    <img src="images/architecture-1.jpg" alt="Bootstrap Touch Slider"  class="slide-image"/>
+                    <div class="bs-slider-overlay"></div>
+                    <!-- Slide Text Layer -->
+                    <div class="slide-text slide_style_center">
+                        <h1 data-animation="animated flipInX">Fascinate Architecture</h1>
+                        <p data-animation="animated lightSpeedIn">Make a Fascinated Home.</p>
+                        <!--<a href="#" target="_blank" class="btn btn-default" data-animation="animated fadeInUp">Register</a>-->
+                        <a class="btn btn-primary contact" data-animation="animated  fadeInDown">Fix A Meeting</a>
+                    </div>
+                </div>
+                <!-- End of Slide -->
+
+                <!-- second Slide -->
+                <div class="item">
+                    <!-- Slide Background -->
+                    <img src="images/interior-1.jpg" alt="Bootstrap Touch Slider"  class="slide-image"/>
+                    <div class="bs-slider-overlay"></div>
+                    <!-- Slide Text Layer -->
+                    <div class="slide-text slide_style_center">
+                        <h1 data-animation="animated flipInX">Attractive Interior</h1>
+                        <p data-animation="animated lightSpeedIn">Make a Fascinated Home.</p>
+                        <!--<a href="#" target="_blank" class="btn btn-default" data-animation="animated fadeInUp">Register</a>-->
+                        <a href="#" target="_blank"  class="btn btn-primary contact" data-animation="animated fadeInDown">Fix A Meeting</a>
+                    </div>
+                </div>
+                <!-- End of Slide -->
+
+                <!-- third Slide -->
+                <div class="item">
+                    <!-- Slide Background -->
+                    <img src="images/glass-work-1.jpg" alt="Bootstrap Touch Slider"  class="slide-image"/>
+                    <div class="bs-slider-overlay"></div>
+                    <!-- Slide Text Layer -->
+                    <div class="slide-text slide_style_center">
+                        <h1 data-animation="animated flipInX">Attractful Glass Works</h1>
+                        <p data-animation="animated lightSpeedIn">Make a Fascinated Home.</p>
+                        <!--<a href="#" target="_blank" class="btn btn-default" data-animation="animated fadeInUp">Register</a>-->
+                        <a href="#" target="_blank"  class="btn btn-primary contact" data-animation="animated fadeInDown">Fix A Meeting</a>
+                    </div>
+                </div>
+                <!-- End of Slide -->
+
+                <!-- fourth Slide -->
+                <div class="item">
+                    <!-- Slide Background -->
+                    <img src="images/gardening-1.jpg" alt="Bootstrap Touch Slider"  class="slide-image"/>
+                    <div class="bs-slider-overlay"></div>
+                    <!-- Slide Text Layer -->
+                    <div class="slide-text slide_style_center">
+                        <h1 data-animation="animated flipInX">Colourful Garden</h1>
+                        <p data-animation="animated lightSpeedIn">Make a Fascinated Home.</p>
+                        <!--<a href="#" target="_blank" class="btn btn-default" data-animation="animated fadeInUp">Register</a>-->
+                        <a href="#" target="_blank"  class="btn btn-primary contact" data-animation="animated fadeInDown">Fix A Meeting</a>
+                    </div>
+                </div>
+                <!-- End of Slide -->
+
+                <!-- fifth Slide -->
+                <div class="item">
+                    <!-- Slide Background -->
+                    <img src="images/flooring.jpeg" alt="Bootstrap Touch Slider"  class="slide-image"/>
+                    <div class="bs-slider-overlay"></div>
+                    <!-- Slide Text Layer -->
+                    <div class="slide-text slide_style_center">
+                        <h1 data-animation="animated flipInX">Fascinate Flooring</h1>
+                        <p data-animation="animated lightSpeedIn">Make a Fascinated Home.</p>
+                        <!--<a href="#" target="_blank" class="btn btn-default" data-animation="animated fadeInUp">Register</a>-->
+                        <a href="#" target="_blank"  class="btn btn-primary contact" data-animation="animated fadeInDown">Fix A Meeting</a>
+                    </div>
+                </div>
+                <!-- End of Slide -->
+
+
+            </div><!-- End of Wrapper For Slides -->
+
+            <!-- Left Control -->
+            <a class="left carousel-control" href="#bootstrap-touch-slider" role="button" data-slide="prev">
+                <span class="fa fa-angle-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+
+            <!-- Right Control -->
+            <a class="right carousel-control" href="#bootstrap-touch-slider" role="button" data-slide="next">
+                <span class="fa fa-angle-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+
+        </div> <!-- End  bootstrap-touch-slider Slider -->
+    </div>
+</main>
+<section class='about_us' id="about_us">
+    <div class='container-fluid'>
+        <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <div class="wah-main-heading">
+                <span> WHO WE ARE   </span>
+            </div>
+            <div class="border">
+                <div></div>
+            </div>
+            <div class='wah-data'>
+                <label>What A Home is Leading architectural and interior firm that designs spaces for commercial, retail and other clients. Founded in JUN 2017 by Rajesh. We will provide high quailty services by highly qualified Engineers. We will do the services based on Vastu shastra. Our services available only around Coimbatore. We have around 500 happy clients , 20 services and 5 awards. We will provide best service. Our team work perfectly to provide best service. </label>
             </div>
         </div>
+    </div>
+</section>
 
-        <div class="wrapper">
-            <ul class="scene unselectable" data-friction-x="0.1" data-friction-y="0.1" data-scalar-x="25" data-scalar-y="15" id="scene">
-                <li class="layer" data-depth="0.00">
+<section class="services" id="services">
+    <div class="container-fluid">
+        <div class="wah-main-heading">
+            <span>Serivces</span>
+        </div>
+        <div class="wah-data">
+            <span>All the services provided by us</span>
+        </div>
+        <div class="border">
+            <div></div>
+        </div>
+        <div class='services-type'>
+            <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                <div class='col-lg-3 col-md-3 col-sm-6 col-xs-12'>
+                    <a href="javascript:void(0)" target="_blank"> <div class='type-block'>
+                        <div class='service-thumbnil'>
+                            <img src='./images/service3.png'>
+                        </div>
+                        <div class='service-details'>
+                            <div class="wah-sub-heading">
+                                <span>Architecture</span>
+                            </div>
+                            <div class='wah-data'>
+                                Looking for perfect architecture <br>
+                                WH is there to provide.
+                            </div>
+                        </div>
+                    </div></a>
+                </div>
+                <div class='col-lg-3 col-md-3 col-sm-6 col-xs-12'>
+                    <a href="javascript:void(0)" target="_blank"><div class='type-block'>
+                        <div class='service-thumbnil'>
+                            <img src='./images/gardening-logo.png'>
+                        </div>
+                        <div class='service-details'>
+                            <div class="wah-sub-heading">
+                                <span>Gardening</span>
+                            </div>
+                            <div class='wah-data'>
+                                Need blossoms around you  <br>
+                                WH is there to make.
+                            </div>
+                        </div>
+                    </div></a>
+                </div>
+                <div class='col-lg-3 col-md-3 col-sm-6 col-xs-12'>
+                    <a href="javascript:void(0)" target="_blank"><div class='type-block'>
+                        <div class='service-thumbnil'>
+                            <img src='./images/electrical.png'>
+                        </div>
+                        <div class='service-details'>
+                            <div class="wah-sub-heading">
+                                <span>Electrical</span>
+                            </div>
+                            <div class='wah-data'>
+                                Electrical Issue ?<br>
+                                WH is there to solve.
+                            </div>
+                        </div>
+                    </div></a>
+                </div>
+                <div class='col-lg-3 col-md-3 col-sm-6 col-xs-12'>
+                    <a href="javascript:void(0)" target="_blank"> <div class='type-block'>
+                        <div class='service-thumbnil'>
+                            <img src='./images/false-celeing-logo.png'>
+                        </div>
+                        <div class='service-details'>
+                            <div class="wah-sub-heading">
+                                <span>False Celeing</span>
+                            </div>
+                            <div class='wah-data'>
+                                Waiting for fascinate false celing <br>
+                                WH is there to build.
+                            </div>
+                        </div>
+                    </div></a>
+                </div>
+            </div>
+            <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                <div class='col-lg-3 col-md-3 col-sm-6 col-xs-12'>
+                    <a href="javascript:void(0)" target="_blank"><div class='type-block'>
+                        <div class='service-thumbnil'>
+                            <img src='./images/modular-logo.png'>
+                        </div>
+                        <div class='service-details'>
+                            <div class="wah-sub-heading">
+                                <span>Modular Kitchen</span>
+                            </div>
+                            <div class='wah-data'>
+                                Want a break from daily grind ? <br>
+                                Wh will provide innovative idea.
+                            </div>
+                        </div>
+                    </div></a>
+                </div>
+                <div class='col-lg-3 col-md-3 col-sm-6 col-xs-12'>
+                    <a href="javascript:void(0)" target="_blank"><div class='type-block'>
+                        <div class='service-thumbnil'>
+                            <img src='./images/wood-works-logo.png'>
+                        </div>
+                        <div class='service-details'>
+                            <div class="wah-sub-heading">
+                                <span>Wood Works</span>
+                            </div>
+                            <div class='wah-data'>
+                                Seeking for terrific wood works. <br>
+                                WH is there for your ideas.
+                            </div>
+                        </div>
+                    </div></a>
+                </div>
+                <div class='col-lg-3 col-md-3 col-sm-6 col-xs-12'>
+                    <a href="javascript:void(0)" target="_blank"> <div class='type-block'>
+                        <div class='service-thumbnil'>
+                            <img src='./images/flooring-logo.png'>
+                        </div>
+                        <div class='service-details'>
+                            <div class="wah-sub-heading">
+                                <span>Flooring</span>
+                            </div>
+                            <div class='wah-data'>
+                                Irritated with your floorings <br>
+                                WH is there to make pleasent.
+                            </div>
+                        </div>
+                    </div></a>
+                </div>
+                <div class='col-lg-3 col-md-3 col-sm-6 col-xs-12'>
+                    <a href="javascript:void(0)" target="_blank"> <div class='type-block'>
+                        <div class='service-thumbnil'>
+                            <img src='./images/window-logo.png'>
+                        </div>
+                        <div class='service-details'>
+                            <div class="wah-sub-heading">
+                                <span>Windows</span>
+                            </div>
+                            <div class='wah-data'>
+                                Need pleasant sunlight and air? <br>
+                                WH is there to arrange.
+                            </div>
+                        </div>
+                    </div></a>
+                </div>
+            </div>
+            <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                <div class='col-lg-3 col-md-3 col-sm-6 col-xs-12'>
+                    <a href="javascript:void(0)" target="_blank"><div class='type-block'>
+                        <div class='service-thumbnil'>
+                            <img src='./images/LED-logo.png'>
+                        </div>
+                        <div class='service-details'>
+                            <div class="wah-sub-heading">
+                                <span>LED</span>
+                            </div>
+                            <div class='wah-data'>
+                                Need to decorate with LED. <br>
+                                WH is there to provide.
+                            </div>
+                        </div>
+                    </div></a>
+                </div>
+                <div class='col-lg-3 col-md-3 col-sm-6 col-xs-12'>
+                    <a href="javascript:void(0)" target="_blank"><div class='type-block'>
+                        <div class='service-thumbnil'>
+                            <img src='./images/automation-logo.png'>
+                        </div>
+                        <div class='service-details'>
+                            <div class="wah-sub-heading">
+                                <span>Automation</span>
+                            </div>
+                            <div class='wah-data'>
+                                Access all with a command. <br>
+                                WH is there to provide.
+                            </div>
+                        </div>
+                    </div></a>
+                </div>
+                <div class='col-lg-3 col-md-3 col-sm-6 col-xs-12'>
+                    <a href="javascript:void(0)" target="_blank"> <div class='type-block'>
+                        <div class='service-thumbnil'>
+                            <img src='./images/glass-logo.png'>
+                        </div>
+                        <div class='service-details'>
+                            <div class="wah-sub-heading">
+                                <span>Glass</span>
+                            </div>
+                            <div class='wah-data'>
+                                Looking for good glass works <br>
+                                WH is there to provide.
+                            </div>
+                        </div>
+                    </div></a>
+                </div>
+                <div class='col-lg-3 col-md-3 col-sm-6 col-xs-12'>
+                    <a href="javascript:void(0)" target="_blank"> <div class='type-block'>
+                        <div class='service-thumbnil'>
+                            <img src='./images/plumbing-logo.png'>
+                        </div>
+                        <div class='service-details'>
+                            <div class="wah-sub-heading">
+                                <span>Plumbing</span>
+                            </div>
+                            <div class='wah-data'>
+                                Need a Plumber for your home? <br>
+                                WH is there to provide.
+                            </div>
+                        </div>
+                    </div></a>
+                </div>
+            </div>
+            <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                <div class='col-lg-3 col-md-3 col-sm-6 col-xs-12'>
+                    <a href="javascript:void(0)" target="_blank"><div class='type-block'>
+                        <div class='service-thumbnil'>
+                            <img src='./images/wall-painting-logo.png'>
+                        </div>
+                        <div class='service-details'>
+                            <div class="wah-sub-heading">
+                                <span>Wall Painting</span>
+                            </div>
+                            <div class='wah-data'>
+                                Looking for colourful Wall.<br>
+                                WH is there to provide.
+                            </div>
+                        </div>
+                    </div></a>
+                </div>
+                <div class='col-lg-3 col-md-3 col-sm-6 col-xs-12'>
+                    <a href="javascript:void(0)" target="_blank"><div class='type-block'>
+                        <div class='service-thumbnil'>
+                            <img src='./images/wall-art-logo.png'>
+                        </div>
+                        <div class='service-details'>
+                            <div class="wah-sub-heading">
+                                <span>Wall Art</span>
+                            </div>
+                            <div class='wah-data'>
+                                Looking for Awesome Wall art. <br>
+                                WH is there to provide.
+                            </div>
+                        </div>
+                    </div></a>
+                </div>
+                <div class='col-lg-3 col-md-3 col-sm-6 col-xs-12'>
+                    <a href="javascript:void(0)" target="_blank"> <div class='type-block'>
+                        <div class='service-thumbnil'>
+                            <img src='./images/metal-works-logo.png'>
+                        </div>
+                        <div class='service-details'>
+                            <div class="wah-sub-heading">
+                                <span>Metal Works</span>
+                            </div>
+                            <div class='wah-data'>
+                                Build anything with metals. <br>
+                                WH is there to provide.
+                            </div>
+                        </div>
+                    </div></a>
+                </div>
+                <div class='col-lg-3 col-md-3 col-sm-6 col-xs-12'>
+                    <a href="javascript:void(0)" target="_blank"> <div class='type-block'>
+                        <div class='service-thumbnil'>
+                            <img src='./images/curtains-logo.png'>
+                        </div>
+                        <div class='service-details'>
+                            <div class="wah-sub-heading">
+                                <span>Curtains</span>
+                            </div>
+                            <div class='wah-data'>
+                                Looking for awesome curtains. <br>
+                                WH is there to provide.
+                            </div>
+                        </div>
+                    </div></a>
+                </div>
+            </div>
+            <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                <div class='col-lg-3 col-md-3 col-sm-6 col-xs-12'>
+                    <a href="javascript:void(0)" target="_blank"><div class='type-block'>
+                        <div class='service-thumbnil'>
+                            <img src='./images/cctv-logo.png'>
+                        </div>
+                        <div class='service-details'>
+                            <div class="wah-sub-heading">
+                                <span>CCTV</span>
+                            </div>
+                            <div class='wah-data'>
+                                Need fingertip security? <br>
+                                WH is there to secure you.
+                            </div>
+                        </div>
+                    </div></a>
+                </div>
+                <div class='col-lg-3 col-md-3 col-sm-6 col-xs-12'>
+                    <a href="javascript:void(0)" target="_blank"><div class='type-block'>
+                        <div class='service-thumbnil'>
+                            <img src='./images/solar-system-logo.png'>
+                        </div>
+                        <div class='service-details'>
+                            <div class="wah-sub-heading">
+                                <span>Solar Powers</span>
+                            </div>
+                            <div class='wah-data'>
+                                Looking for less electricity bills? <br>
+                                WH is there to help you.
+                            </div>
+                        </div>
+                    </div></a>
+                </div>
+                <div class='col-lg-3 col-md-3 col-sm-6 col-xs-12'>
+                    <a href="javascript:void(0)" target="_blank"> <div class='type-block'>
+                        <div class='service-thumbnil'>
+                            <img src='./images/roofing-logo.png'>
+                        </div>
+                        <div class='service-details'>
+                            <div class="wah-sub-heading">
+                                <span>Roofing</span>
+                            </div>
+                            <div class='wah-data'>
+                                Need to protect with roofing <br>
+                                WH is there to protect.
+                            </div>
+                        </div>
+                    </div></a>
+                </div>
+                <div class='col-lg-3 col-md-3 col-sm-6 col-xs-12'>
+                    <a href="javascript:void(0)" target="_blank"> <div class='type-block'>
+                        <div class='service-thumbnil'>
+                            <img src='./images/water-filter-logo.png'>
+                        </div>
+                        <div class='service-details'>
+                            <div class="wah-sub-heading">
+                                <span>Water Filter</span>
+                            </div>
+                            <div class='wah-data'>
+                                Need to taste purified water <br>
+                                WH is there to provide.
+                            </div>
+                        </div>
+                    </div></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> <!-- Service Section ends -->
+
+<!--<section class='user-type'>-->
+<!--<div class='container-fluid'>-->
+<!--<div class='col-lg-6 col-md-6 col-sm-12 col-xs-12 left'>-->
+<!--<div class='wah-main-heading'>-->
+<!--<span> Aldus PageMaker</span>-->
+<!--</div>-->
+<!--<div class='wah-data'>-->
+<!--Merol Muspi Rolood Test Data Merol Muspi Rolood Test Data-->
+<!--Merol Muspi Rolood Test Data -->
+<!--</div>-->
+<!--<div class="click-here">-->
+<!--<a> Click Here  <li class="fa fa-angle-double-right"></li> </a>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class='col-lg-6 col-md-6 col-sm-12 col-xs-12 right'>-->
+<!--<div class='wah-main-heading'>-->
+<!--<span> Aldus PageMaker</span>-->
+<!--</div>-->
+<!--<div class='wah-data'>-->
+<!--Merol Muspi Rolood Test Data Merol Muspi Rolood Test Data-->
+<!--Merol Muspi Rolood Test Data -->
+<!--</div>-->
+<!--<div class="click-here">-->
+<!--<a> Click Here  <li class="fa fa-angle-double-right"></li> </a>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+
+<!--<div id="hexagon"></div>-->
+<!--</section> &lt;!&ndash; User type Section ends &ndash;&gt;-->
+
+<div class="branded-section numbers">
+    <div class="masked">
+        <div class="container">
+            <div class="heading">
+                <h2>We are proud of these counts</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="number-item">
+                        <span class="number" id="clientsCounter" data-count="100600" data-duration="4">500</span>
+                        <span class="text">Happy clients</span>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="number-item">
+                        <span class="number" id="projectCounter" data-count="45000" data-duration="15">700</span>
+                        <span class="text">Events</span>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="number-item">
+                        <span class="number" id="awardCounter" data-count="40" data-ration="20">5</span>
+                        <span class="text">Awards</span>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="number-item">
+                        <span class="number" id="coffeeCounter" data-count="20000" data-duration="3">20</span>
+                        <span class="text">Services</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class='product' id="products">
+    <div class='container'>
+        <div class='row'>
+            <div class="wah-main-heading">
+                <span>Products</span>
+            </div>
+            <div class="wah-data">
+                <span>All the Products provided by us</span>
+            </div>
+            <div class="border">
+                <div></div>
+            </div>
+            <!--<img src="./images/prev.png" class="product-prev">-->
+            <div class='product-slider'>
+                <div><img src='./images/products/aquasana-1.png' height="80%" width="100%"></div>
+                <!--<div><img src='./images/products/asianpaints-1.png' height="100%" width="100%"></div>-->
+                <div><img src='./images/products/Bosch-1.png' height="80%" width="100%"></div>
+                <div><img src='./images/products/Blum-1.png' height="80%" width="100%"></div>
+                <div><img src='./images/products/godrej.png' height="80%" width="100%"></div>
+            </div>
+            <!--<img src="./images/next.png" class="product-next">-->
+        </div>
+    </div>
+</section> <!-- Product Section ends -->
+
+<!--<section class='user-type-2' id="user-">-->
+<!--<div class='container-fluid'>-->
+<!--<div class='col-lg-6 col-md-6 col-sm-12 col-xs-12 right'>-->
+<!--<div class='wah-main-heading'>-->
+<!--<span> Aldus PageMaker</span>-->
+<!--</div>-->
+<!--<div class='wah-data'>-->
+<!--Merol Muspi Rolood Test Data Merol Muspi Rolood Test Data-->
+<!--Merol Muspi Rolood Test Data -->
+<!--</div>-->
+<!--<div class="click-here">-->
+<!--<a> Click Here  <li class="fa fa-angle-double-right"></li> </a>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class='col-lg-6 col-md-6 col-sm-12 col-xs-12 left'>-->
+<!--<div class='wah-main-heading'>-->
+<!--<span> Aldus PageMaker</span>-->
+<!--</div>-->
+<!--<div class='wah-data'>-->
+<!--Merol Muspi Rolood Test Data Merol Muspi Rolood Test Data-->
+<!--Merol Muspi Rolood Test Data -->
+<!--</div>-->
+<!--<div class="click-here">-->
+<!--<a> Click Here  <li class="fa fa-angle-double-right"></li> </a>-->
+<!--</div>-->
+<!--</div>  -->
+<!--</div>-->
+
+<!--<div id="hexagon"></div>-->
+<!--</section> &lt;!&ndash; User type 2 Section ends &ndash;&gt;-->
+
+<section class='site-map' id="site-map">
+    <div class='container-fluid'>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <!--<div id="googleMap" style="width:100%;height:400px;"></div>-->
+            <img src="images/map.png" width="100%" height="100%">
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <ul id="address">
+                <li>
+                    <label> Name : </label>
+                    <label> Rajesh </label>
                 </li>
-                <!-- BG -->
-
-                <li class="layer" data-depth="0.10">
-                    <div class="background">
-                    </div>
+                <li>
+                    <label> Address : </label>
+                    <address>
+                        66A Bharathiyar street ,
+                        <br>ondipudhur ,
+                        <br>coimbatore .
+                    </address>
                 </li>
-
-                <!-- Hero -->
-
-                <li class="layer" data-depth="0.20">
-                    <div class="title">
-                        <h2>
-                            What A Home
-
-                        </h2>
-                        <span class="line"></span>
-                    </div>
+                <li>
+                    <label> Mobile : </label>
+                    <label> 9629955570 </label>
                 </li>
-
-                <li class="layer" data-depth="0.25">
-                    <div class="sphere">
-                        <img alt="sphere" src="images/sphere.png">
-                    </div>
-                </li>
-
-                <li class="layer" data-depth="0.30">
-                    <div class="hero">
-                        <h1 id="countdown">
-                            What-A-Home Finished 
-                        </h1>
-
-                        <p class="sub-title">
-                            What-A-Home
-                        </p>
-                    </div>
-                </li>
-                <!-- Flakes -->
-
-                <li class="layer" data-depth="0.40">
-                    <div class="depth-1 flake1">
-                        <img alt="flake" src="images/flakes/depth1/flakes1.png">
-                    </div>
-
-                    <div class="depth-1 flake2">
-                        <img alt="flake" src="images/flakes/depth1/flakes2.png">
-                    </div>
-
-                    <div class="depth-1 flake3">
-                        <img alt="flake" src="images/flakes/depth1/flakes3.png">
-                    </div>
-
-                    <div class="depth-1 flake4">
-                        <img alt="flake" src="images/flakes/depth1/flakes4.png">
-                    </div>
-                </li>
-
-                <li class="layer" data-depth="0.50">
-                    <div class="depth-2 flake1">
-                        <img alt="flake" src="images/flakes/depth2/flakes1.png">
-                    </div>
-
-                    <div class="depth-2 flake2">
-                        <img alt="flake" src="images/flakes/depth2/flakes2.png">
-                    </div>
-                </li>
-
-                <li class="layer" data-depth="0.60">
-                    <div class="depth-3 flake1">
-                        <img alt="flake" src="images/flakes/depth3/flakes1.png">
-                    </div>
-
-                    <div class="depth-3 flake2">
-                        <img alt="flake" src="images/flakes/depth3/flakes2.png">
-                    </div>
-
-                    <div class="depth-3 flake3">
-                        <img alt="flake" src="images/flakes/depth3/flakes3.png">
-                    </div>
-
-                    <div class="depth-3 flake4">
-                        <img alt="flake" src="images/flakes/depth3/flakes4.png">
-                    </div>
-                </li>
-
-                <li class="layer" data-depth="0.80">
-                    <div class="depth-4">
-                        <img alt="flake" src="images/flakes/depth4/flakes.png">
-                    </div>
-                </li>
-
-                <li class="layer" data-depth="1.00">
-                    <div class="depth-5">
-                        <img alt="flake" src="images/flakes/depth5/flakes.png">
-                    </div>
-                </li>
-                <!-- Contact -->
-
-                <li class="layer" data-depth="0.20">
-                    <div class="contact">
-                    
-                        
-                        <a class="mail" href="mailto:rajesh@whatahome.in">rajesh@whatahome.in</a>
-                    </div>
+                <li>
+                    <label> Email : </label>
+                    <label> whatahome@gmail.com </label>
                 </li>
             </ul>
         </div>
 
-        <!-- Javascript -->
-        <script src="js/plugins.js"></script> 
-        <script src="js/jquery.countdown.min.js"></script> 
-        <script src="js/main.js"></script>
+    </div>
+</section>
 
-    </body>
+<section class='forum' id="forum">
+    <div class='container-fluid'>
+        <div class="wah-main-heading">
+            <span>Forum</span>
+        </div>
+        <div class="wah-data">
+            <span>Get all info about us</span>
+        </div>
+        <div class="border">
+            <div></div>
+        </div>
+        <div class='forum-data'>
+            <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                <div class='col-lg-6 col-md-6 col-sm-12 col-xs-12'>
+                    <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12 speciality '>
+                        <div class='question'>
+                            <div class='queston-data'> <span> Only new work? </span>  </div>
+                            <div class='view'> <span> <a class='plus'> + </a> <a class='minus'> - </a> </span> </div>
+                        </div>
+                        <div class='answer'>
+                <span>
+                  No, we will take over all rework at any condition
+                </span>
+                        </div>
+                    </div>
+                    <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12 speciality'>
+                        <div class='question'>
+                            <div class='queston-data'> <span> We will provide you products and will you provide us the service? </span>  </div>
+                            <div class='view'> <span> <a class='plus'> + </a> <a class='minus'> - </a> </span> </div>
+                        </div>
+                        <div class='answer'>
+                <span>
+                  Yes, we will but we are not responsible for the products after the work is done
+                </span>
+                        </div>
+                    </div>
+                    <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12 speciality'>
+                        <div class='question'>
+                            <div class='queston-data'> <span> What are the brands that you will use? </span>  </div>
+                            <div class='view'> <span> <a class='plus'> + </a> <a class='minus'> - </a> </span> </div>
+                        </div>
+                        <div class='answer'>
+                <span>
+                 We will provide the brand based on your budget as well as your suggestion
+                </span>
+                        </div>
+                    </div>
+                    <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12 speciality'>
+                        <div class='question'>
+                            <div class='queston-data'> <span> Will these services be available outside of Coimbatore? </span>  </div>
+                            <div class='view'> <span> <a class='plus'> + </a> <a class='minus'> - </a> </span> </div>
+                        </div>
+                        <div class='answer'>
+                <span>
+                  Yes, we will provide based on your requirement
+                </span>
+                        </div>
+                    </div>
+                </div>
+                <div class='col-lg-6 col-md-6 col-sm-12 col-xs-12'>
+                    <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12 speciality '>
+                        <div class='question'>
+                            <div class='queston-data'> <span> May I know the working time? </span>  </div>
+                            <div class='view'> <span> <a class='plus'> + </a> <a class='minus'> - </a> </span> </div>
+                        </div>
+                        <div class='answer'>
+                <span>
+                  May I know the working time?
+                </span>
+                        </div>
+                    </div>
+                    <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12 speciality'>
+                        <div class='question'>
+                            <div class='queston-data'> <span> The time duration for the work? </span>  </div>
+                            <div class='view'> <span> <a class='plus'> + </a> <a class='minus'> - </a> </span> </div>
+                        </div>
+                        <div class='answer'>
+                <span>
+                  It is also based on the service that you are going to choose. Moreover, we will try to complete within 15 days.
+                </span>
+                        </div>
+                    </div>
+                    <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12 speciality'>
+                        <div class='question'>
+                            <div class='queston-data'> <span> Will monthly service is available? </span>  </div>
+                            <div class='view'> <span> <a class='plus'> + </a> <a class='minus'> - </a> </span> </div>
+                        </div>
+                        <div class='answer'>
+                <span>
+                  We will provide the service if the problem is occurring on products provided by us until warranty period ends.
+                </span>
+                        </div>
+                    </div>
+                    <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12 speciality'>
+                        <div class='question'>
+                            <div class='queston-data'> <span> Minimum budget of the srevice? </span>  </div>
+                            <div class='view'> <span> <a class='plus'> + </a> <a class='minus'> - </a> </span> </div>
+                        </div>
+                        <div class='answer'>
+                <span>
+                  This also based on the service that you chosen. Moverover, starting amount is 25000
+                </span>
+                        </div>
+                    </div>
+                </div>
+                <!--<div class='col-lg-6 col-md-6 col-sm-12 col-xs-12 info'>-->
+                <!--<div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>-->
+                <!--<div class='type-block'>-->
+                <!--<div class='service-thumbnil'>-->
+                <!--<img src='./images/service.png'>-->
+                <!--</div>-->
+                <!--<div class='service-details'>-->
+                <!--<div class="wah-sub-heading">-->
+                <!--<span>Service-1</span>-->
+                <!--</div>-->
+                <!--<div class='wah-data'>-->
+                <!--Merol Muspi Rolood Test Data Merol Muspi Rolood Test Data-->
+                <!--Merol Muspi Rolood Test Data -->
+                <!--</div>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--<div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>-->
+                <!--<div class='type-block'>-->
+                <!--<div class='service-thumbnil'>-->
+                <!--<img src='./images/service.png'>-->
+                <!--</div>-->
+                <!--<div class='service-details'>-->
+                <!--<div class="wah-sub-heading">-->
+                <!--<span>Service-1</span>-->
+                <!--</div>-->
+                <!--<div class='wah-data'>-->
+                <!--Merol Muspi Rolood Test Data Merol Muspi Rolood Test Data-->
+                <!--Merol Muspi Rolood Test Data -->
+                <!--</div>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--</div>-->
+            </div>
+        </div>
+    </div>
+</section> <!-- Forum Section ends -->
+
+<section class='contact' id="contact">
+    <div class="container">
+        <div class="wah-main-heading">
+            <span>Contact Us !</span>
+        </div>
+        <div class="wah-data">
+            <span>All ways welcome</span>
+        </div>
+        <div class="border">
+            <div></div>
+        </div>
+        <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <div class='col-lg-6 col-md-6 col-sm-12 col-xs-12 no-padding-left'>
+                <input type="text" name="" class='form-control' placeholder="Name">
+            </div>
+            <div class='col-lg-6 col-md-6 col-sm-12 col-xs-12 no-padding-right'>
+                <input type="text" name="" class='form-control' placeholder="Email">
+            </div>
+        </div>
+        <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <div class='col-lg-6 col-md-6 col-sm-12 col-xs-12 no-padding-left'>
+                <input type="text" name="" class='form-control' placeholder="Mobile">
+            </div>
+            <div class='col-lg-6 col-md-6 col-sm-12 col-xs-12 no-padding-right'>
+                <input type="text" name="" class='form-control' placeholder="Alternate  Number">
+            </div>
+        </div>
+        <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <textarea class="form-control" placeholder="Your Message"></textarea>
+        </div>
+
+    </div>
+</section> <!-- Contact Section ends -->
+
+<section class='footer'>
+    <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+        <div class='col-lg-6 col-md-6 col-sm-12 col-xs-12'>
+            <a> Home </a>
+            <a> Services </a>
+            <a> Sitemap </a>
+            <a> Contact Us </a>
+            <a> Disclaimer </a>
+            <a> Privacy Policy </a>
+        </div>
+        <div class='col-lg-6 col-md-6 col-sm-12 col-xs-12'>
+            <a target="_blank" href="http://www.google.com"> <li class='fa fa-facebook-square'></li> </a>
+            <a target="_blank" href="http://www.google.com"> <li class='fa fa-google-plus-square'></li> </a>
+            <a target="_blank" href="http://www.google.com"> <li class='fa fa-linkedin-square'></li> </a>
+            <a target="_blank" href="http://www.google.com"> <li class='fa fa-twitter-square'></li> </a>
+            <a target="_blank" href="http://www.google.com"> <li class='fa fa-youtube-square'></li> </a>
+            <a target="_blank" href="http://www.google.com"> <li class='fa fa-instagram'></li> </a>
+        </div>
+    </div>
+</section> <!-- Footer Section ends -->
+
+
+
+
+<div id="contact-modal">
+
+</div>
+<script>
+    // $('.contact').on('click',function () {
+    //     jQuery.ajax({
+    //         url: "test.html", dataType: "html"
+    //     }).done(function( responseHtml ) {
+    //         $("#contact-modal").html(responseHtml);
+    //     });
+    //
+    //     $('#myModal').modal('show');
+    // })
+
+    $("a.contact").on('click',function(e) {
+        e.preventDefault();
+        var section = $('.site-map');
+        $("html, body").animate({
+            scrollTop: $(section).offset().top
+        });
+    });
+
+    var map;
+    function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: -34.397, lng: 150.644},
+            zoom: 8
+        });
+    }
+</script>
+
+<!--<script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap" async defer></script>-->
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+
+
+</body>
 </html>
