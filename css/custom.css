@@ -104,13 +104,14 @@ section.product .product-slider {padding-top: 30px;}
 /*Section - site-map*/
 
 section.site-map {background-color: #282828;}
-section.site-map #address {margin-top: 150px;font-size: 18px;color: #f1f1f1;font-weight: normal}
+section.site-map #address {margin-top: 150px;font-size: 18px;color: #f1f1f1 !important;font-weight: normal}
 /*section.site-map #address li span {padding-left: 90px;}*/
 section.site-map .col-lg-6:nth-child(2) {margin-bottom: 50px;}
 section.site-map img {margin-top: 120px;}
 section.site-map .fa-mobile {font-size: 25px;}
 section.site-map #address label {font-weight: normal;}
 section.site-map #address > div  {padding-top: 10px;}
+section.site-map #address a {color: #f1f1f1}
 
 /* Section - Footer*/
 section.footer > .col-lg-12 {background-color: #282828;padding-top: 10px; padding-bottom: 10px;}
