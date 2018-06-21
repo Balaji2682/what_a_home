@@ -76,7 +76,7 @@
                 <!-- first Slide -->
                 <div class="active item">
                     <!-- Slide Background -->
-                    <img src="images/architecture-1.jpg" alt="Bootstrap Touch Slider"  class="slide-image"/>
+                    <img src="images/architecture-1.jpg" alt="Bootstrap Touch Slider" class="slide-image"/>
                     <div class="bs-slider-overlay"></div>
                     <!-- Slide Text Layer -->
                     <div class="slide-text slide_style_center">
@@ -176,7 +176,7 @@
                 <div></div>
             </div>
             <div class='wah-data'>
-                <label>What A Home is Leading architectural and interior firm that designs spaces for commercial, retail and other clients. Founded in JUN 2017 by Rajesh. We will provide high quailty services by highly qualified Engineers. We will do the services based on Vastu shastra. Our services available only around Coimbatore. We have around 500 happy clients , 20 services and 5 awards. We will provide best service. Our team work perfectly to provide best service. </label>
+                <label>What A Home is Leading architectural and interior firm that designs spaces for commercial, retail and other clients. Founded in JUN 2017 by Rajesh Kumar. We will provide high quailty services by highly qualified Engineers. We will do the services based on Vastu shastra. Our services available only around Coimbatore. We have around 500 happy clients , 20 services and 5 awards. We will provide best service. Our team work perfectly to provide best service. </label>
             </div>
         </div>
     </div>
@@ -653,34 +653,33 @@
 
 <section class='site-map' id="site-map">
     <div class='container-fluid'>
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
             <!--<div id="googleMap" style="width:100%;height:400px;"></div>-->
-            <img src="images/map.png" width="100%" height="100%">
+            <a href="https://www.google.co.in/maps/place/Ondipudur" target="_blank"><img src="images/map.png" alt="google map" width="100%" height="100%"></a>
+            <!--<div id="map" style="width:100%;height:400px;"></
+            div>-->
         </div>
 
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-            <ul id="address">
-                <li>
-                    <label> Name : </label>
-                    <label> Rajesh </label>
-                </li>
-                <li>
-                    <label> Address : </label>
-                    <address>
-                        66A Bharathiyar street ,
-                        <br>ondipudhur ,
-                        <br>coimbatore .
-                    </address>
-                </li>
-                <li>
-                    <label> Mobile : </label>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <div id="address">
+                <div>
+                    <label> <li class="fa fa-user"></li> </label>
+                    <label> Rajesh Kumar </label>
+                </div>
+                <div>
+                    <label> <li class="fa fa-address-card"></li>  66A Bharathiyar street ,
+                         <span> ondipudur , </span>
+                         <span> coimbatore </span> </label>
+                </div>
+                <div>
+                    <label><li class="fa fa-mobile"></li>  </label>
                     <label> 9629955570 </label>
-                </li>
-                <li>
-                    <label> Email : </label>
+                </div>
+                <div>
+                    <label> <li class="fa fa-envelope"></li>  </label>
                     <label> whatahome@gmail.com </label>
-                </li>
-            </ul>
+                </div>
+            </div>
         </div>
 
     </div>
@@ -753,7 +752,7 @@
                         </div>
                         <div class='answer'>
                 <span>
-                  May I know the working time?
+                  We will be available for 24*7
                 </span>
                         </div>
                     </div>
@@ -781,7 +780,7 @@
                     </div>
                     <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12 speciality'>
                         <div class='question'>
-                            <div class='queston-data'> <span> Minimum budget of the srevice? </span>  </div>
+                            <div class='queston-data'> <span> Minimum budget of the service? </span>  </div>
                             <div class='view'> <span> <a class='plus'> + </a> <a class='minus'> - </a> </span> </div>
                         </div>
                         <div class='answer'>
@@ -917,7 +916,21 @@
             zoom: 8
         });
     }
+
+
 </script>
+
+<script>
+    function myMap() {
+        var mapCanvas = document.getElementById("map");
+        var mapOptions = {
+            center: new google.maps.LatLng(10.9983, 77.0536), zoom: 10
+        };
+        var map = new google.maps.Map(mapCanvas, mapOptions);
+    }
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
 
 <!--<script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap" async defer></script>-->
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
