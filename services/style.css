@@ -3,6 +3,8 @@ body{
 	  color:#f1f1f1;
 }
 
+.font-yellow { color: #FDC100; }
+
 .carousel-item > img{
 	width: 100%;
 	height: 100vh;
@@ -47,7 +49,7 @@ div#first-block{
 	width: 100%;
 	height:100vh;
 	background: url('./img/Architecture/archbg.jpg') no-repeat;
-	background-size: 100% 100%;}
+	background-size: 100% 100% !important;}
 div#first-block > * {color: #fff;}
 div#first-block > div:first-child {padding-top: 40vh;}
 div#first-block h4 {padding-left: 20%;}
@@ -70,8 +72,33 @@ section.footer > .col-lg-12 > .col-lg-6:nth-child(2) {float: right;}
 section.footer > .col-lg-12 > .col-lg-6 {display: inline-block;}
 section.footer > .col-lg-12 {display: inline-block}
 
+/* Site Map */
 section#site-map{margin: 50px 0;}
 
+/*Our Works*/
+section#works ul > li {
+	background-color: #1c1c1c
+}
+
+/* Background - Wall image */
+div#first-block.Architecture { background: url('./img/Architecture/archbg.jpg') no-repeat; }
+div#first-block.Gardening { background: url('./img/Gardening/gardbg.jpg') no-repeat; }
+div#first-block.Electrical { background: url('./img/Electrical/Elec3.jpg') no-repeat; }
+div#first-block.FalseCeling { background: url('./img/FalseCeling/falsbg.jpg') no-repeat; }
+div#first-block.ModularKitchen { background: url('./img/ModularKitchen/modbg.jpg') no-repeat; }
+div#first-block.WoodWorks { background: url('./img/WoodWorks/wood5.jpg') no-repeat; }
+div#first-block.Flooring { background: url('./img/Flooring/floorbg.jpg') no-repeat; }
+div#first-block.Windows { background: url('./img/Windows/windowbg.jpg') no-repeat; }
+div#first-block.LED { background: url('./img/LED/ledbg.jpg') no-repeat; }
+div#first-block.Automation { background: url('./img/Automation/autombg.jpg') no-repeat; }
+div#first-block.Glass { background: url('./img/Glass/glassbg.jpg') no-repeat; }
+div#first-block.Plumbing { background: url('./img/Plumbing/plumbg.jpg') no-repeat; }
+div#first-block.WallPainting { background: url('./img/WallPainting/wallpbg.jpg') no-repeat; }
+div#first-block.MetalWorks { background: url('./img/MetalWorks/metalbg.jpg') no-repeat; }
+div#first-block.Curtains { background: url('./img/Curtains/curtainbg.jpg') no-repeat; }
+div#first-block.CCTV { background: url('./img/CCTV/cctvbg.jpg') no-repeat; }
+div#first-block.SolarPower { background: url('./img/SolarPower/solarbg.jpg') no-repeat; }
+div#first-block.Roofing { background: url('./img/Roofing/roofbg.jpg') no-repeat; }
 
 @media screen and (max-width: 576px) {
 	section.footer > .col-lg-12 > .col-lg-6:nth-child(1) {
@@ -88,9 +115,8 @@ section#site-map{margin: 50px 0;}
 
 @media screen and (max-width: 767px) {
     .tz-gallery > .row > .col-md-4:not(:first-child) { margin-top: 1rem; }
-}
+	/* Background - Wall image */
+	div#first-block.Architecture { background: url('./img/Architecture/arch5.jpg') no-repeat; }
+	div#first-block.Gardening { background: url('./img/Gardening/gard3.jpg') no-repeat; }
 
-
-#listbg{
-	background-color: #1c1c1c
 }
