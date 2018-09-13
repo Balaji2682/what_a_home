@@ -60,8 +60,8 @@ $(document).ready(function(){
             const Head = 'Architecture';
             const Desc = 'Where Dreams Comes True';
             const work = {
-                new: ['FEASIBILITY ANALYSIS','MASTER PLANNING','SCHEMATIC DESIGN','DESIGN DEVELOPMENT'],
-                old: ['RENOVATION','PERMITTING PROCESS','CONSTRUCTION ADMINISTRATION','CONSTRUCTION DOCUMENTATION']
+                new: ['Feasibility Analysis','Master Planning','Schematic Design','Design Development'],
+                old: ['Renovation','Permitting Process','Construction Administration','Construction Documentation']
             };
             generate(image,Head,Desc,work);
         }
@@ -73,8 +73,8 @@ $(document).ready(function(){
             const Head = 'Gardening';
             const Desc = 'Where Pleasant Arrives';
             const work = {
-                new: ['Landscape Designing','Lawn Service','Garden Decoration','Organic Gardening'],
-                old: ['Maintenance','Gardening Solutions','CARE TAKERS','Cleaning']
+                new: ['Landscape Designing','Lawn Service','Vertical Gardening','Organic Gardening'],
+                old: ['Maintenance','Gardening Solutions','Care Takers','Cleaning']
             };
             generate(image,Head,Desc,work);
         }
@@ -112,7 +112,7 @@ $(document).ready(function(){
             const Head = 'Modular Kitchen';
             const Desc = 'Personalise your cooking space';
             const work = {
-                new: ['Hazel Straight','U-Shaped',' L-Shaped','Parallel'],
+                new: ['Modular Kitchen','Wardrobes','Pooja Units','Wall Paneling'],
                 old: ['Re-Works','Add-on','Repair Works','Customer Requirement']
             };
             generate(image,Head,Desc,work);
@@ -125,7 +125,7 @@ $(document).ready(function(){
             const Head = 'Wood Works';
             const Desc = 'Live In Traditional Environment';
             const work = {
-                new: ['Wooden Doors','Dining Table','Cupboards','Windows'],
+                new: ['Wooden Doors','Wooden Handrails','Wooden Arts','Wooden Frames'],
                 old: ['Re-Works','Varnishing','Repair Works','Re modeling']
             };
             generate(image,Head,Desc,work);
@@ -190,7 +190,7 @@ $(document).ready(function(){
             const Head = 'Glass Work';
             const Desc = 'Where Brightness Arrives';
             const work = {
-                new: ['Glass Door','Glass Panel','Glass Art','Glass Windows'],
+                new: ['Glass Door','Toughened Glass','Glass Art','Bullet Proof Glass'],
                 old: ['Art Work','Repair Works','Re-Works','Parts Replacement']
             };
             generate(image,Head,Desc,work);
@@ -216,7 +216,7 @@ $(document).ready(function(){
             const Head = 'Wall Painting';
             const Desc = 'Brings Colorful To Your Home';
             const work = {
-                new: ['Spray Painting','Water Proofing','Regular Painting','Play School'],
+                new: ['Spray Painting','Water Proofing','3D Wallpapers','Play School'],
                 old: ['Patch Works','Color Fade Fix','Re-Painting','Wall Analysis']
             };
             generate(image,Head,Desc,work);
@@ -281,7 +281,7 @@ $(document).ready(function(){
             const Head = 'Solar Power';
             const Desc = 'Harness The Power Of Sun';
             const work = {
-                new: ['Solar Electric System','Solar Hot Water','Solar Inverter','Solar Electric Storage'],
+                new: ['Solar Electric System','Solar water Heater','Solar Inverter','Solar Electric Storage'],
                 old: ['Cell Replacement','Glass Replacement','Electric Work','Re-Installation']
             };
             generate(image,Head,Desc,work);
@@ -303,12 +303,12 @@ $(document).ready(function(){
 
         case 'WaterFilter':
         {
-            const image = 'water';
+            const image = 'wat';
             const Head = 'Water Filter';
             const Desc = 'Purity In Every Drops';
             const work = {
-                new: ['FEASIBILITY ANALYSIS','MASTER PLANNING','SCHEMATIC DESIGN','DESIGN DEVELOPMENT'],
-                old: ['RENOVATION','PERMITTING PROCESS','CONSTRUCTION ADMINISTRATION','CONSTRUCTION DOCUMENTATION']
+                new: ['Water Analysis','Installation','AMC Service','RO/UV/UF/Ozone Installation'],
+                old: ['Filter change','Spares Repair','Maintenance','Other Services']
             };
             generate(image,Head,Desc,work);
         }
