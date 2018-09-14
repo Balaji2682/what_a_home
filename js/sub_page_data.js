@@ -292,7 +292,7 @@ $(document).ready(function(){
         {
             const image = 'roof';
             const Head = 'Roofing';
-            const Desc = 'A Perfect Weather Sheild For A Perfect Home';
+            const Desc = 'A Perfect Weather Sheild';
             const work = {
                 new: ['Asbestos Sheet','Green Roofing','Stone Coated','Metal Roofing'],
                 old: ['Renovation','Repair Works','Replacements','Other Services']

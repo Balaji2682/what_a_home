@@ -130,7 +130,25 @@ div#first-block{ background-attachment: fixed !important; }
 @media screen and (max-width: 767px) {
     .tz-gallery > .row > .col-md-4:not(:first-child) { margin-top: 1rem; }
 	/* Background - Wall image */
-	div#first-block.Architecture { background: url('./img/Architecture/arch5.jpg') no-repeat; }
-	div#first-block.Gardening { background: url('./img/Gardening/gard3.jpg') no-repeat; }
+	div#first-block.Architecture { background: url('./img/Architecture/marchbg.jpg') no-repeat; }
+	div#first-block.Gardening { background: url('./img/Gardening/mgardbg.jpg') no-repeat; }
+	div#first-block.Electrical { background: url('./img/Electrical/melecbg.jpg') no-repeat; }
+	div#first-block.FalseCeling { background: url('./img/FalseCeling/mfalsbg.jpg') no-repeat; }
+	div#first-block.ModularKitchen { background: url('./img/ModularKitchen/mmodbg.jpg') no-repeat; }
+	div#first-block.WoodWorks { background: url('./img/WoodWorks/mwood5.jpg') no-repeat; }
+	div#first-block.Flooring { background: url('./img/Flooring/mfloorbg.jpg') no-repeat; }
+	div#first-block.Windows { background: url('./img/Windows/mwindowbg.jpg') no-repeat; }
+	div#first-block.LED { background: url('./img/LED/mledbg.jpg') no-repeat; }
+	div#first-block.Automation { background: url('./img/Automation/mautombg.jpg') no-repeat; }
+	div#first-block.Glass { background: url('./img/Glass/mglassbg.jpg') no-repeat; }
+	div#first-block.Plumbing { background: url('./img/Plumbing/mplumbg.jpg') no-repeat; }
+	div#first-block.WallPainting { background: url('./img/WallPainting/mwallpbg.jpg') no-repeat; }
+	div#first-block.WallArt { background: url('./img/WallArt/mwallabg.jpg') no-repeat; }
+	div#first-block.MetalWorks { background: url('./img/MetalWorks/mmetalbg.jpg') no-repeat; }
+	div#first-block.Curtains { background: url('./img/Curtains/mcurtainbg.jpg') no-repeat; }
+	div#first-block.CCTV { background: url('./img/CCTV/mcctvbg.jpg') no-repeat; }
+	div#first-block.SolarPower { background: url('./img/SolarPower/msolarbg.jpg') no-repeat; }
+	div#first-block.Roofing { background: url('./img/Roofing/mroofbg.jpg') no-repeat; }
+	div#first-block.WaterFilter { background: url('./img/WaterFilter/mwatbg.jpg') no-repeat; }
 
 }
